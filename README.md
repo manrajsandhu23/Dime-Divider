@@ -1,1 +1,1 @@
-# Dime DIvider
+# Dime Divider

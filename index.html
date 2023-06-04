@@ -5,12 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Dime Divider</title>
 </head>
 
-<body class="bg-black">
-    <h1 class="text-red-500"> H</h1>
+<body class="h-full bg-sky-900 font-clash">
+    <!-- #005620 -->
+    <!-- #00d64f -->
+    <h1 class="text-4xl font-clash mt-4 font-medium text-center text-[#00d64f] tracking-wider ">Dime Divider</h1>
+
+    <div class=" mt-12 mx-4 border-4 border-solid border-[#00d64f] p-6 text-center ">
+        <!-- bill input starts -->
+        <div>
+            <div class="text-center">
+                <p class="text-2xl text-[#00d64f] tracking-wider ">Bill Amount</p>
+                <input id="bill"
+                    class="p-2 tracking-wider bg-transparent text-white font-[520] border-4 border-solid outline-none border-[#00d64f]"
+                    placeholder="1000" type="text">
+            </div>
+        </div>
+        <!-- bill input end -->
+        <!-- cash given start  -->
+        <div>
+            <div class=" mt-6 text-center">
+                <p class="text-2xl tracking-wider text-[#00d64f] ">Cash Given</p>
+                <input id="cash"
+                    class="p-2 tracking-wider bg-transparent text-white font-[520] border-4 border-solid outline-none border-[#00d64f]"
+                    placeholder="1000" type="text">
+            </div>
+        </div>
+        <!-- cash given end  -->
+        <!-- submit button starts  -->
+        <div>
+            <div class="mt-6">
+                <button class="py-3 px-6 bg-[#00d64f] font-semibold tracking-wider text-white"
+                    type="submit">Check</button>
+            </div>
+        </div>
+        <!-- submit button end  -->
+    </div>
+    <div>
+        <div class="">
+            <p class="text-2xl font-clash mt-4 font-medium text-center text-[#00d64f] tracking-wider ">Return Dime</p>
+            <table class="text-white ">
+                <tr class="">
+                    <td>No of Notes</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Note</td>
+                    <td>2000</td>
+                    <td>1000</td>
+                    <td>500</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
 </body>
 
 </html>
