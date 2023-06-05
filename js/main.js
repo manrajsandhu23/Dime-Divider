@@ -14,6 +14,7 @@ function inputValidator() {
   }
   notesToBeReturned(balAmount);
 }
+
 function notesToBeReturned(balAmount) {
   for (let i = 0; i < availableNotes.length; i++) {
     let numberOfNotes = Math.trunc(balAmount / availableNotes[i]);
