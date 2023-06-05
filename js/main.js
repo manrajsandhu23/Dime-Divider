@@ -3,7 +3,18 @@ const cash = document.querySelector("#cash");
 const bill = document.querySelector("#bill");
 const output = document.querySelector("#output-text");
 const noOfNotes = document.querySelectorAll(".noOfNotesF");
+const dash = document.querySelector("#dashboard1");
+const payBox = document.querySelector("#payBox");
+const pay = document.querySelector("#display-btn");
+
 const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
+
+pay.addEventListener("click", payHandler);
+
+function payHandler() {
+  payBox.classList.remove("hidden");
+  pay.classList.add("hidden");
+}
 
 function inputValidator() {
   let balAmount = cash.value - bill.value;
@@ -11,6 +22,8 @@ function inputValidator() {
     output.innerHTML = "Amount is Invalid ❌";
   } else {
     output.innerHTML = "Amount to be returned is " + balAmount;
+    dash.classList.remove("hidden");
+    dash.classList.add("flex");
   }
   notesToBeReturned(balAmount);
 }

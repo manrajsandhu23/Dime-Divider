@@ -23,37 +23,49 @@
 
                 <input id="bill"
                     class="p-2 tracking-wider bg-transparent text-white font-[520] border-4 border-solid outline-none border-[#00d64f]"
-                    placeholder="1000" type="text">
+                    placeholder="800" type="text">
             </div>
         </div>
         <!-- bill input end -->
-        <!-- cash given start  -->
-        <div>
-            <div class=" mt-6 text-center">
-                <!-- <p class="text-2xl tracking-wider text-[#00d64f] ">Cash Given</p> -->
-                <label class="mx-4 text-2xl tracking-wider text-[#00d64f] " for="cash">Cash Given</label>
-                <input id="cash"
-                    class="p-2 tracking-wider bg-transparent text-white font-[520] border-4 border-solid outline-none border-[#00d64f]"
-                    placeholder="1000" type="text">
-            </div>
-        </div>
-        <!-- cash given end  -->
-        <div>
-            <p id="output-text" class="mt-4 text-2xl tracking-wider text-[#00d64f]"></p>
-        </div>
-        <!-- submit button starts  -->
+
+        <!-- display button starts  -->
         <div>
             <div class="mt-6">
-                <button id="check" class="py-3 px-6 bg-[#00d64f] font-semibold tracking-wider text-white"
-                    type="submit">Check</button>
+                <button id="display-btn" class="py-3 px-6 bg-[#00d64f] font-semibold tracking-wider text-white"
+                    type="submit">Pay</button>
             </div>
         </div>
-        <!-- submit button end  -->
+        <!-- display button end  -->
+        <span id="payBox" class="hidden">
+            <!-- cash given start  -->
+            <div>
 
+                <div class=" mt-6 text-center">
+                    <!-- <p class="text-2xl tracking-wider text-[#00d64f] ">Cash Given</p> -->
+                    <label class="mx-4 text-2xl tracking-wider text-[#00d64f] " for="cash">Cash Given</label>
+                    <input id="cash"
+                        class="p-2 tracking-wider bg-transparent text-white font-[520] border-4 border-solid outline-none border-[#00d64f]"
+                        placeholder="1000" type="text">
+                </div>
+            </div>
+            <!-- cash given end  -->
+            <div>
+                <p id="output-text" class="mt-4 text-2xl tracking-wider text-[#00d64f]"></p>
+            </div>
+
+            <!-- submit button starts  -->
+            <div>
+                <div class="mt-6">
+                    <button id="check" class="py-3 px-6 bg-[#00d64f] font-semibold tracking-wider text-white"
+                        type="submit">Check</button>
+                </div>
+            </div>
+            <!-- submit button end  -->
+        </span>
     </div>
     <!-- Section 1 ends here  -->
     <div>
-        <div class="flex justify-center">
+        <div id="dashboard1" class="dashboard1 hidden justify-center">
             <table class=" text-white">
                 <caption class="text-2xl font-clash my-4 font-medium text-center text-[#00d64f] tracking-wider ">Return
                     Dime</caption>
